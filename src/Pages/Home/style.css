@@ -1,0 +1,32 @@
+.main-container {
+    margin: 30px 120px;
+    animation: appear 1s;
+}
+
+.align-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.seta {
+    animation: arrowHome 1s infinite alternate;
+    margin-right: 38px;
+}
+@keyframes arrowHome {
+    0% {
+        transform: translateX(20px);
+        }
+        100% {
+        transform: translateX(0px);
+        }
+  }
+
+@keyframes appear {
+        0% {
+        transform: translateY(40px);
+        }
+        100% {
+        transform: translateY(0px);
+        }
+        from {opacity: 0;}
+        to {opacity: 1;}
+  }
