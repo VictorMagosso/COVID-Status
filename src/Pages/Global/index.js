@@ -1,36 +1,22 @@
 import React, { Component, useState } from 'react';
 import PageDefault from '../PageDefault';
-import api from '../../components/API/apiCovid';
 import {Link} from 'react-router-dom';
 import './style.css';
+import SelectPaises from '../../components/Selects/SelectPaises';
 
-class Global extends Component {
-    state= {
-        status: [],
-    }
-    async componentDidMount(){
-        const retornoCountries = await api.get(`/countries`);
-        const retornoSummary = await api.get(`/summary`);
-
-        this.setState({status: retornoCountries.data})
-    }
-    render(){
-        
-       const {status} = this.state
+function Global () {
 
     return (
+
     <PageDefault>
         <div className="container-global">
     <h1 className="mb-5">Global</h1>
     <div className="container-formulario-global">
         <label className="d-block">Escolha o país para verificar os dados atuais sobre o COVID-19</label>
-
-        <select size="1" className="select-paises">
-        {status.map(nomeCountry => (
-            <option key={nomeCountry.Country}>{nomeCountry.Country}</option>
-            ))}
-            </select>
-    <button id="calcular">Verificar<i className="fas fa-search ml-2"></i></button>
+        <SelectPaises/>
+        
+            
+            <button id="calcular">Verificar<i className="fas fa-search ml-2"></i></button>
     
     <h1 className="mt-3"> - Country Zone: +55</h1>
     <span>Data de atualização: 04/08/2020</span>
@@ -81,6 +67,6 @@ class Global extends Component {
 </div>
     </div>
     </PageDefault>
-        )}};
+        )};
 
 export default Global;

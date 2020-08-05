@@ -6,16 +6,7 @@
     height: 150vh;
     margin: 30px 120px;
 }
-.select-paises {
-    border-radius: 5px;
-    text-align: center;
-    padding: 7px;
-    border: 1px solid rgba(0, 0, 0, 0.219);
-    width: 50%;
-}
-option {
-    padding: 1px;
-}
+
 label {
     font-weight: bold;
 }

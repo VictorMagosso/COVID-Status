@@ -2,21 +2,19 @@ import React, { Component, useState } from 'react';
 import apiNacional from '../../components/API/apiNacional';
 import './style.css';
 import PageDefault from '../PageDefault';
+import SelectEstados from '../../components/Selects/SelectEstados';
 
 class Nacional extends Component {
     state= {
         status: [],
-        allStates: []
     }
     async componentDidMount(){
-        const all = await apiNacional.get(``)
         const res = await apiNacional.get(`/brazil/uf/sp`);
 
-        this.setState({status: res.data, allStates: all.data})
+        this.setState({status: res.data})
     }
     
     render(){
-       const {allStates} = this.state
        const {status} = this.state
 
        return (
@@ -25,11 +23,14 @@ class Nacional extends Component {
     <h1 className="mb-5">Nacional</h1>
     <div className="container-formulario-nacional">
         <label className="d-block">Escolha o estado para saber os dados sobre COVID</label>
-    <select size="10" className="select-cidades">
-        {status.map(states => (
-        <option key={states.uf} value="ac" className={states.uf}>Acre</option>
-        ))}
-    </select>
+       {/* <SelectEstados/>  */}
+        
+        
+        {/* <select size="10" className="select-cidades">
+       </select> */}
+
+
+
     <button id="calcular">Verificar<i className="fas fa-search ml-2"></i></button>
 
     <div className="display-flex-resultados">
