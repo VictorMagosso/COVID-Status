@@ -6,9 +6,17 @@ import PageDefault from '../PageDefault';
 class Nacional extends Component {
     state= {
         status: [],
+        allStates: []
     }
+    async componentDidMount(){
+        const all = await apiNacional.get(``)
+        const res = await apiNacional.get(`/brazil/uf/sp`);
+
+        this.setState({status: res.data, allStates: all.data})
+    }
+    
     render(){
-        
+       const {allStates} = this.state
        const {status} = this.state
 
        return (
@@ -17,34 +25,10 @@ class Nacional extends Component {
     <h1 className="mb-5">Nacional</h1>
     <div className="container-formulario-nacional">
         <label className="d-block">Escolha o estado para saber os dados sobre COVID</label>
-    <select size="10" className="select-cidades" ref={uf}>
-        <option value="ac" className="AC">Acre</option>
-        <option value="al" className="AL">Alagoas</option>
-        <option value="ap" className="AP">Amapá</option>
-        <option value="am" className="AM">Amazonas</option>
-        <option value="ba" className="BA">Bahia</option>
-        <option value="ce" className="CE">Ceará</option>
-        <option value="df" className="DF">Distrito Federal</option>
-        <option value="es" className="ES">Espírito Santo</option>
-        <option value="go" className="GO">Goiás</option>
-        <option value="ma" className="MA">Maranhão</option>
-        <option value="mt" className="MT">Mato Grosso</option>
-        <option value="ms" className="MS">Mato Grosso do Sul</option>
-        <option value="mg" className="MG">Minas Gerais</option>
-        <option value="pa" className="PA">Pará</option>
-        <option value="pb" className="PB">Paraíba</option>
-        <option value="pr" className="PR">Paraná</option>
-        <option value="pe" className="PE">Pernambuco</option>
-        <option value="pi" className="PI">Piauí</option>
-        <option value="rj" className="RJ">Rio de Janeiro</option>
-        <option value="rn" className="RN">Rio Grande do Norte</option>
-        <option value="rs" className="RS">Rio Grande do Sul</option>
-        <option value="ro" className="RO">Rondônia</option>
-        <option value="rr" className="RR">Roraima</option>
-        <option value="sc" className="SC">Santa Catarina</option>
-        <option value="sp" className="SP">São Paulo</option>
-        <option value="se" className="SE">Sergipe</option>
-        <option value="to" className="TO">Tocantins</option>
+    <select size="10" className="select-cidades">
+        {status.map(states => (
+        <option key={states.uf} value="ac" className={states.uf}>Acre</option>
+        ))}
     </select>
     <button id="calcular">Verificar<i className="fas fa-search ml-2"></i></button>
 
@@ -112,13 +96,7 @@ class Nacional extends Component {
 </PageDefault>
        )
     }
-    async componentDidMount(){
-        const [estado, setEstado] = useState('estado')
-        const uf = React.useRef({ref})
-        const res = await apiNacional.get(`/brazil/uf/${setEstado(uf)}`);
 
-        this.setState({status: res.data})
-    }
 }
 
 export default Nacional;

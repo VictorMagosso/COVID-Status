@@ -4,6 +4,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Nacional from './Pages/Nacional';
+import Global from './Pages/Global';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,6 +12,7 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" component={App}/>
       <Route path="/nacional" component={Nacional}/>
+      <Route path="/global" component={Global}/>
     <App />
     </Switch>
     </BrowserRouter>

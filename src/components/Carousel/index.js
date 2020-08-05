@@ -10,37 +10,37 @@ import './style.css';
 const Carousel = () => (
     <div>
     <h3 className="mt-4">Últimas notícias</h3>
- <div id="carousel" class="carousel slide" data-ride="carousel">
+ <div id="carousel" className="carousel slide" data-ride="carousel">
 
-  <div class="carousel-inner">
-    <div class="carousel-item bg-light">
-      <img class="d-inline w-50" src={ImgUm} alt="First slide"/>
-      <img class="d-inline w-50" src={ImgDois} alt="Second slide"/>
+  <div className="carousel-inner">
+    <div className="carousel-item bg-light">
+      <img className="d-inline w-50" src={ImgUm} alt="First slide"/>
+      <img className="d-inline w-50" src={ImgDois} alt="Second slide"/>
       <a href="" className="btn w-50 float-left">Veja mais</a>
       <a href="" className="btn w-50 float-right">Veja mais</a>
     </div>
 
-    <div class="carousel-item active">
-      <img class="d-inline w-50" src={ImgTres} alt="Second slide"/>
-      <img class="d-inline w-50" src={ImgQuatro} alt="Third slide"/>
+    <div className="carousel-item active">
+      <img className="d-inline w-50" src={ImgTres} alt="Second slide"/>
+      <img className="d-inline w-50" src={ImgQuatro} alt="Third slide"/>
       <a href="" className="btn w-50">Veja mais</a>
       <a href="" className="btn w-50">Veja mais</a>
     </div>
 
-    <div class="carousel-item">
-      <img class="d-inline w-50" src={ImgCinco} alt="Second slide"/>
-      <img class="d-inline w-50" src={ImgSeis} alt="Third slide"/>
+    <div className="carousel-item">
+      <img className="d-inline w-50" src={ImgCinco} alt="Second slide"/>
+      <img className="d-inline w-50" src={ImgSeis} alt="Third slide"/>
       <a href="" className="btn w-50">Veja mais</a>
       <a href="" className="btn w-50">Veja mais</a>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+  <a className="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+  <a className="carousel-control-next" href="#carousel" role="button" data-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="sr-only">Next</span>
   </a>
 </div>
 </div>
