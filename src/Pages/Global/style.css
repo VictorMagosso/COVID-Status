@@ -1,14 +1,25 @@
 .container-global {
     background: rgba(255,255,255,0.5); 
     background: url('../../assets/global.jpg') no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     text-align: center;
-    height: 150vh;
+    height: auto;
     margin: 30px 120px;
 }
 
 label {
     font-weight: bold;
+}
+.select-paises {
+    margin: auto;
+    border-radius: 5px;
+    padding: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    width: 50%;
+}
+option {
+    padding: 1px;
 }
 #calcular {
     color: white;

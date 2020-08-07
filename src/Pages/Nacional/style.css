@@ -3,16 +3,10 @@
     background: url('../../assets/section-nacional.png') no-repeat;
     background-size: cover;
     text-align: center;
-    height: 100vh;
+    height: 176vh;
     margin: 30px 120px;
 }
-.select-cidades {
-    border-radius: 5px;
-    text-align: center;
-    padding: 7px;
-    border: 1px solid rgba(0, 0, 0, 0.219);
-    width: 50%;
-}
+
 option {
     padding: 1px;
 }
@@ -47,112 +41,123 @@ label {
 .display-flex-resultados > .item-flex-resultados > .fas > .fa-check {
     color: green;
 }
-.AC {
+.select-estados {
+    margin: auto;
+    border-radius: 5px;
+    padding: 7px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    width: 50%;
+}
+option {
+    padding: 1px;
+}
+.A1 {
     background: url('../../assets/AC.png') no-repeat left;
     background-size: contain;
 }
-.AL {
+.A2 {
     background: url('../../assets/AL.png') no-repeat;
     background-size: contain;
 }
-.AP {
+.A3 {
     background: url('../../assets/AP.png') no-repeat;
     background-size: contain;
 }
-.AM {
+.A4 {
     background: url('../../assets/AM.png') no-repeat;
     background-size: contain;
 }
-.BA {
+.A5 {
     background: url('../../assets/BA.png') no-repeat;
     background-size: contain;
 }
-.CE {
+.A6 {
     background: url('../../assets/CE.png') no-repeat;
     background-size: contain;
 }
-.DF {
+.A7 {
     background: url('../../assets/DF.png') no-repeat;
     background-size: contain;
 }
-.ES {
+.A8 {
     background: url('../../assets/ES.png') no-repeat;
     background-size: contain;
 }
-.GO {
+.A9 {
     background: url('../../assets/GO.png') no-repeat;
     background-size: contain;
 }
-.MA {
+.A10 {
     background: url('../../assets/MA.png') no-repeat;
     background-size: contain;
 }
-.MT {
+.A11 {
     background: url('../../assets/MT.png') no-repeat;
     background-size: contain;
 }
-.MS {
+.A12 {
     background: url('../../assets/MS.png') no-repeat;
     background-size: contain;
 }
-.MG {
+.A13 {
     background: url('../../assets/MG.png') no-repeat;
     background-size: contain;
 }
-.PA {
+.A14 {
     background: url('../../assets/PA.png') no-repeat;
     background-size: contain;
 }
-.PB {
+.A15 {
     background: url('../../assets/PB.png') no-repeat;
     background-size: contain;
 }
-.PR {
+.A16 {
     background: url('../../assets/PR.png') no-repeat;
     background-size: contain;
 }
-.PE {
+.A17 {
     background: url('../../assets/PE.png') no-repeat;
     background-size: contain;
 }
-.PI {
+.A18 {
     background: url('../../assets/PI.png') no-repeat;
     background-size: contain;
 }
 
-.RJ {
+.A19 {
     background: url('../../assets/RJ.png') no-repeat;
     background-size: contain;
 }
-.RN {
+.A20 {
     background: url('../../assets/RN.png') no-repeat;
     background-size: contain;
 }
-.RS {
+.A21 {
     background: url('../../assets/RS.png') no-repeat;
     background-size: contain;
 }
-.RR {
+.A22 {
     background: url('../../assets/RR.png') no-repeat;
     background-size: contain;
 }
-.RO {
+.A23 {
     background: url('../../assets/RO.png') no-repeat;
     background-size: contain;
 }
-.SC {
+.A24 {
     background: url('../../assets/SC.png') no-repeat;
     background-size: contain;
 }
-.SP {
+.A25 {
     background: url('../../assets/SP.png') no-repeat;
     background-size: contain;
 }
-.SE {
+.A26 {
     background: url('../../assets/SE.png') no-repeat;
     background-size: contain;
 }
-.TO {
+.A27 {
     background: url('../../assets/TO.png') no-repeat;
     background-size: contain;
 }
