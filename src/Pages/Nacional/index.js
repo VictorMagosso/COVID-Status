@@ -1,5 +1,6 @@
 import React, { Component, useState } from 'react';
 import apiNacional from '../../components/API/apiNacional';
+import Loader from 'react-loader-spinner';
 import './style.css';
 import PageDefault from '../PageDefault';
 import api from '../../components/API/apiCovid';
@@ -41,6 +42,14 @@ class Nacional extends React.Component {
        
        return (
     <PageDefault>
+         <Loader className='loader'
+         type="Grid"
+         color="#fff"
+         height={100}
+         width={100}
+         timeout={1500}
+ 
+      />
         <div className="container-nacional">
             <h1 className="mb-5">Nacional</h1>
         <div className="container-formulario-nacional">
