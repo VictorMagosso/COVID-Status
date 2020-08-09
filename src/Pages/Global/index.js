@@ -11,8 +11,6 @@ class Global extends React.Component {
         this.state = {value: 'Brazil', status: [], ultimoDia: [], dayOne: [], ultimoMes: []};
         this.handleChange = this.handleChange.bind(this);
       }
-
-
     async componentDidMount(){
         const retornoCountries = await api.get('/countries');
         let paisSelecionadoApi = await api.get(`/live/country/${this.state.value.toLowerCase()}/status/confirmed/date/2020-03-21T00:00:00Z`)
