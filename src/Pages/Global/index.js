@@ -53,7 +53,9 @@ class Global extends React.Component {
       }
     render(){
        const {status, ultimoDia, dayOneConfirmed, dayOneActive, dayOneRecovered, dayOneDeaths, ultimoMesConfirmed, ultimoMesRecovered, ultimoMesDeaths, globalSummary} = this.state
-        return (
+       
+
+       return (
 
     <PageDefault>
         <Loader className='loader'
@@ -79,7 +81,7 @@ class Global extends React.Component {
             
         <button onClick={(e) => this.componentDidMount(e)} className='mt-4' id="calcular">Atualizar<i className="fas fa-recycle ml-2"></i></button>
     
-    <span>Última atualização: 10/08/2020</span>
+    <span>Última atualização: {dataTratada}</span>
     <div className='flex-legenda'>
             <div className='legenda-items'>
                 <span><i className="fas fa-check text-success"></i> - Casos confirmados</span>
@@ -130,3 +132,11 @@ class Global extends React.Component {
         )}};
 
 export default Global;
+
+const dataAtual = new Date();
+
+       const dia = dataAtual.getDate()
+       const mes = dataAtual.getMonth()
+       const ano = dataAtual.getFullYear()
+
+export const dataTratada = `${dia}/${mes + 1}/${ano}`

@@ -2,7 +2,7 @@ import React, { Component, useState } from 'react';
 import apiNacional from '../../components/API/apiNacional';
 import Loader from 'react-loader-spinner';
 import PageDefault from '../PageDefault';
-import Chart from 'react-google-charts';
+import {dataTratada} from '../Global';
 import api from '../../components/API/apiCovid';
 import './style.css';
 
@@ -80,7 +80,8 @@ class Nacional extends React.Component {
         
         </select>
 
-    <button onClick={(e) => this.componentDidMount(e)} id="calcular">Atualizar<i className="fas fa-recycle ml-2"></i></button>
+    <button onClick={(e) => this.componentDidMount(e)} id="calcular-nacional">Atualizar<i className="fas fa-recycle ml-2"></i></button>
+    <span>Última atualização: {dataTratada}</span>
     <div className='flex-legenda'>
             <div className='legenda-items'>
                 <span><i className="fas fa-check text-success"></i> - Casos confirmados</span>

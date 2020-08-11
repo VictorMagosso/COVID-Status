@@ -11,6 +11,19 @@
     animation: arrowHome 1s infinite alternate;
     margin-right: 38px;
 }
+.sintomas-covid {
+  margin: 20px;
+
+}
+.sintomas-covid > ol > li {
+  font-size: 20px;
+}
+.prevencoes-covid {
+  margin: 20px;
+}
+.prevencoes-covid > h3 {
+  font-weight: 200;
+}
 @keyframes arrowHome {
     0% {
         transform: translateX(20px);
