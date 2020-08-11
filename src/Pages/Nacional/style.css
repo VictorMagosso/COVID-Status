@@ -14,7 +14,7 @@ option {
 label {
     font-weight: bold;
 }
-#calcular {
+#calcular-nacional {
     color: white;
     background-color: rgb(91, 148, 94);
     padding: 7px;
@@ -52,10 +52,22 @@ label {
 option {
     padding: 1px;
 }
-.grafico-regioes-brasil {
-    z-index: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: #ffffff00;
-}
+@media screen and (max-width: 650px) {
+    .container-nacional {
+        background-size: contain;
+        margin: 0;
+        padding-top: 10px;
+        height: auto;
+    }
+  }
+  @media screen and (max-width: 857px) {
+    .container-nacional {
+        background-size: cover;
+    }
+    .select-estados {
+        width: 100%;
+    }
+    #calcular-nacional {
+        width: 100%;
+    }
+  }

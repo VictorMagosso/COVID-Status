@@ -86,3 +86,27 @@ option {
       height: 220px;
   }
 
+  @media screen and (max-width: 650px) {
+    .container-global {
+        background-position: center;
+        background-size: contain;
+        margin: 0;
+        padding-top: 10px;
+        height: auto;
+    }
+    .class-global-status {
+        position: relative;
+        margin: auto;
+    }
+  }
+  @media (min-width: 650.98px) and (max-width: 1034px) {
+    .container-global {
+        background-position: center;
+        background-size: contain;
+        height: auto;
+    }
+    .class-global-status {
+        position: relative;
+        margin: auto;
+    }
+  }

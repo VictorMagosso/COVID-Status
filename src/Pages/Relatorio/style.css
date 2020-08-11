@@ -1,9 +1,0 @@
-.container-relatorio {
-    text-align: center;
-    margin: 20px 170px;
-}
-.container-flex-relatorio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}

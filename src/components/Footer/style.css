@@ -32,3 +32,25 @@
         transform:rotate(360deg);
     }
 }
+@media screen and (max-width: 650px) {
+    .container-footer {
+        height: auto;
+        margin-bottom: 100px;
+    }
+    .body-footer {
+        text-align: center;
+        margin: 7px;
+    }
+  }
+  @media (min-width: 650.98px) and (max-width: 1030px) {
+    .container-footer {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+  }
+  @media (min-width: 1030.98px) and (max-width: 1230px) {
+    .container-footer {
+        margin-top: 220px;
+        margin-bottom: 100px;
+    }
+  }

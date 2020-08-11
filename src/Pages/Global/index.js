@@ -2,7 +2,6 @@ import React, { Component, useState } from 'react';
 import PageDefault from '../PageDefault';
 import api from '../../components/API/apiCovid';
 import Loader from 'react-loader-spinner';
-import {Link} from 'react-router-dom';
 import './style.css';
 
 class Global extends React.Component {
