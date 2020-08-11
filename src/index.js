@@ -12,7 +12,7 @@ ReactDOM.render(
     <BrowserRouter>
     <Switch>
       <Route exact path="/" component={App}/>
-      <Route exact path="/relatorio" component={Relatorio}/>
+      {/* <Route exact path="/relatorio" component={Relatorio}/> */}
       <Route path="/nacional" component={Nacional}/>
       <Route path="/global" component={Global}/>
     <App />
