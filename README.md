@@ -1,6 +1,8 @@
 # COVID-Status
 ## :atom: Controle Covid-19
 
-### API para COVID desenvolvida com React
+### API para COVID desenvolvida com Reac
 
-![img](https://user-images.githubusercontent.com/62938087/89600134-a918d800-d837-11ea-9729-72993be12420.jpg)
+![global-img](https://user-images.githubusercontent.com/62938087/89847688-f60fed80-db5a-11ea-931d-e53faaaa1f4a.jpg)
+
+### Acesse o site: https://covid-status-seven.vercel.app/
