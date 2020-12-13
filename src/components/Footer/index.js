@@ -11,7 +11,7 @@ const Footer = () => (
     <h5 className='mt-5 mb-3'>Tecnologia usada <i className='fas fa-arrow-right ml-2 mr-2'></i> React <i className='fab fa-react spinning'></i></h5>
     <h6>Contato do desenvolvedor: <i className='fas fa-phone ml-2 mr-3'></i><i className='far fa-envelope'></i></h6>
     <i className='fab fa-whatsapp d-inline mr-2'></i><h6 className='d-inline'>(11) 94883-1123 | victor_magosso@hotmail.com</h6>
-    <h5>Clique <a target='_blank' href='https://victormagosso.github.io/cv_online/'>aqui</a> para ver o CV online</h5>
+    
     </div>
 </div>
 );
